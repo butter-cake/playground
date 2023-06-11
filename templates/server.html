@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Flask</title>
+  </head>
+  <body>
+    <main>
+      <p>Welcome!</p>
+      <div class = boxes>
+        {% for x in range(0,times): %}
+          <h1></h1>  
+        {% endfor %}
+      </div>
+    </main>
+  </body>
+  <style>
+    body{
+
+    }
+    .boxes{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    p{
+      text-align: center;
+      font-size: 25px;
+    }
+
+    h1{
+      background-color: {{ color }};
+      height: 250px;
+      width: 250px;
+      margin-right: 50px;
+      border: 4px solid black;
+    }
+  </style>
+</html>
